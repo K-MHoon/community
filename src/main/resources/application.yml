@@ -1,0 +1,9 @@
+server:
+    port: 8081
+
+property:
+    test:
+        name: property depth test
+propertyTest: test
+propertyTestArray: a,b,c
+propertyTestList: a,b,c
