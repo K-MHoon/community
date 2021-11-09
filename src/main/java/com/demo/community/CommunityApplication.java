@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @SpringBootApplication
-@ComponentScan
 public class CommunityApplication {
 
 	public static void main(String[] args) {
