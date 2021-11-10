@@ -4,14 +4,23 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Getter
 @NoArgsConstructor
+@Entity
+@Table
 public class Book {
 
-    private Integer idx;
+    @Id
+    @GeneratedValue
+    private Long id;
+
+    @Column
     private String title;
+
+    @Column
     private LocalDateTime publishedAt;
 
     @Builder
@@ -19,5 +28,5 @@ public class Book {
         this.title = title;
         this.publishedAt = publishedAt;
     }
-    
+
 }
